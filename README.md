@@ -1,7 +1,7 @@
 SpotiMeteor
 ===
 
-Work based on 2 open source Spotify jukebox repo:
+Work based on 2 open source Spotify jukebox repos:
 
 * code from [meteor-spotify](https://github.com/alanshaw/meteor-spotify) as back end, controlling Spotify.
 * code from [SpotiPI](https://github.com/abartow/SpotiPI) as front end UI, using Bootstrap.
