@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "spotify-node-applescript": {
+      "version": "0.2.2",
+      "resolved": "https://registry.npmjs.org/spotify-node-applescript/-/spotify-node-applescript-0.2.2.tgz",
+      "from": "spotify-node-applescript@0.2.2",
+      "dependencies": {
+        "applescript": {
+          "version": "1.0.0",
+          "resolved": "https://registry.npmjs.org/applescript/-/applescript-1.0.0.tgz",
+          "from": "applescript@1.0.0"
+        }
+      }
+    }
+  }
+}

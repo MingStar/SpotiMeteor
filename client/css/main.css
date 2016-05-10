@@ -1,0 +1,156 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.header {
+  background-color: #f5f5f5;
+}
+
+tr.search-result:hover{
+  background-color: #e5e5e5 !important;
+}
+
+tr.queue-item:hover{
+  background-color: #e5e5e5 !important;
+}
+
+tr{
+  text-align: left;
+}
+
+tr.queue-button-row {
+  text-align: center
+}
+
+
+tr.queue-button{
+  text-align: center
+}
+
+img.album-art{
+  width:100px;
+  height:100px;
+  margin-right: 25px;
+}
+
+input.queue-button{
+  width: 200px;
+  margin-left: 25px;
+  height: 50px;
+}
+
+#now-playing-album-art{
+  width:200px;
+  display: inline-block;
+  margin: 10px;
+}
+
+#now-playing-info-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#not-playing-message {
+  line-height: 30px;
+  height: 30px;
+  margin: 0;
+  padding-top: 7.5px;
+  font-size: 35px;
+  color: #777;
+}
+
+#now-playing-title {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#now-playing-artist {
+  font-style: italic;
+  font-size: 20px;
+}
+
+#search-text{
+  width: 50%;
+  margin: 0 3%;
+}
+
+td.position{
+  width: 42px;
+}
+
+input.queue-delete{
+  margin: 3px 8px;
+  margin-right: 0px;
+}
+
+b#fallback-playlist-name {
+  margin: 5px;
+  font-size: 12px;
+}
+
+p#fallback-playlist-message {
+  margin: 0 0 0 0px;
+}
+
+input#fallback-playlist-search {
+  color: #000;
+  margin-right:10px;
+}
+
+span.label{
+  display: inline-block !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+#song-sel {
+  margin: 1em 0;
+}
+progress {
+  width: 100%;
+}
+
+#play-pause {
+  float: right;
+  margin-top: -3em;
+}
+
+.now-playing a {
+  color: #888;
+  text-decoration: none;
+}
+
+.now-playing a:hover {
+  color: #333;
+  text-shadow: none;
+}
+
+
+#play-pause a {
+  color: #888;
+  font-size: 24px;
+}
+#play-pause a:hover, #play-pause a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+#play-pause a:hover {
+  color: #333;
+  text-shadow: none;
+}
+
+.form-control, .btn {
+  border-color: #999;
+}
+.form-control:hover, .btn:hover, .form-control:focus, .btn:focus {
+  border-color: #444;
+}
+.list-group-item {
+  background-color: transparent;
+}

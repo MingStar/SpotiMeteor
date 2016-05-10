@@ -1,0 +1,15 @@
+<template name="trackItem">
+  <td>{{title}}</td>
+  <td>
+    {{#each artists}}
+      <a class="artist" href="#" data-id="{{id}}">{{name}}</a>&nbsp;
+    {{/each}}
+  </td>
+  <td>
+    {{#with album}}
+      <a class="album" href="#">
+        {{name}}
+      </a>
+    {{/with}}
+  </td>
+</template>

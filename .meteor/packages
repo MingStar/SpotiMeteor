@@ -1,0 +1,15 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+autopublish
+insecure
+jquery
+spotify
+standard-minifier-css
+standard-minifier-js
+twbs:bootstrap
+mizzao:jquery-ui
+amplify

@@ -1,0 +1,66 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>SpotiMeteor</title>
+</head>
+
+<body>
+  {{> navBar }}
+  <div class="container">
+    <div class="starter-template">
+      {{> search }}
+      <div class="row">
+        {{> nowPlaying }}
+        {{> queue }}
+        <!--{> fallbackPlaylist }}-->
+      </div>
+    </div>
+  </div>
+</body>
+
+<template name="search">
+  <p>
+    <input type="text" id="search-text" class="input-lg" placeholder="Search Spotify"/>
+    <button class="btn-lg" id="clear-search-button" value="Clear">Clear</button>
+    <button class="btn-lg" id="history-button" value="Clear">History</button>
+  </p>
+  <p>
+  {{> searchResults }}
+  </p>
+</template>
+
+
+
+<template name="fallbackPlaylist">
+  <div class="page-header">
+    <h1>Auto-DJ</h1>
+  </div>
+  <p class="lead" id="fallback-playlist-message">Playing on shuffle from <span id="fallback-playlist-tag" class="label label-primary">
+      <input id="fallback-playlist-search" type="text" placeholder="Search Playlists" /><b id="fallback-playlist-name">None</b><span id="fallback-playlist-icon" class="glyphicon glyphicon-pencil" aria-hidden="true"></span></span> when no other songs are queued.
+  </p>
+</template>
+
+<template name="navBar">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">SpotiMeteor: <i>Spotify Jukebox</i></a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+

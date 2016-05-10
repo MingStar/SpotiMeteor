@@ -1,0 +1,26 @@
+<template name="searchResults">
+  <table class="table table-striped" id="search-results">
+    <tbody>
+    {{#if songs.count}}
+    <tr class='header'>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Album</th>
+    </tr>
+    {{#each songs}}
+      <tr class='search-result'>
+        {{> trackItem}}
+      </tr>
+      <tr class='queue-button-row' style="display:none;">
+        <td colspan='3'>
+          <img class='album-art' src='{{album.artUrl}}'/>
+          <input type='button' data-target-uri="{{url}}"
+                 class='btn btn-large btn-primary queue-button'
+                 value='Queue'>
+        </td>
+      </tr>
+    {{/each}}
+    {{/if}}
+    </tbody>
+  </table>
+</template>

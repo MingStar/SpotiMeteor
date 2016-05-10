@@ -1,0 +1,25 @@
+<template name="queue">
+  <div class="col-md-5">
+    <div class="page-header">
+      <h1>Up Next</h1>
+    </div>
+    {{#if songs.count}}
+      <table class="table table-striped" id="queue">
+        <tbody>
+        <tr class='header'>
+          <th>Title</th>
+          <th>Artist</th>
+          <th>Album</th>
+        </tr>
+        {{#each songs}}
+          <tr class='queue-item'>
+            {{> trackItem}}
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    {{else}}
+      <p id="queue-empty-message" class="lead">There are currently no songs queued.</p>
+    {{/if}}
+  </div>
+</template>

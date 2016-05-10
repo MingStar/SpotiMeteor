@@ -1,0 +1,42 @@
+<template name="nowPlaying">
+  <div class="now-playing col-md-7">
+    <div class="page-header">
+      <h1>
+        <i class="glyphicon glyphicon-music"></i>
+        Now Playing
+      </h1>
+      <div id="play-pause">
+        {{#if state.isPlaying}}
+          <a href="#" class="pause glyphicon glyphicon-pause"></a>
+        {{else}}
+          <a href="#" class="play glyphicon glyphicon-play"></a>
+        {{/if}}
+        <a href="#" id='stop-now-playing' class="next-song glyphicon glyphicon-fast-forward"></a>
+      </div>
+    </div>
+
+    <div class="well" id="now-playing">
+      {{#with track}}
+        {{#if this}}
+          <img id="now-playing-album-art" class="now-playing" />
+          <div id="now-playing-info-container">
+            <h1 id="now-playing-title" class="now-playing">{{name}}</h1>
+            <div id="now-playing-artist" class="now-playing">
+              {{artist}}
+            </div>
+            <div>
+              <small id="now-playing-album" class="now-playing">
+                {{album}}
+              </small>
+            </div>
+          </div>
+          <progress max="100" value="{{ state.percent }}"></progress>
+        {{else}}
+          <h1 id="not-playing-message" class="lead">
+            <small>No Song Currently Playing</small>
+          </h1>
+        {{/if}}
+      {{/with}}
+    </div>
+  </div>
+</template>
